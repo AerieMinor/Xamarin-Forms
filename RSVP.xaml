@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRSVPMobile.Views.RSVP">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    
+                    <ViewCell>
+                        <Label Text="Name" />
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Text="{Binding Name1}" Placeholder="Enter Name" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Mobile #" />
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Text="{Binding Mobile}" Placeholder="Enter Mobile Number" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Email Address" />
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Text="{Binding EmailAddress}" Placeholder="Enter Email Address" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Submit" Clicked="Button_Clicked_1" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Main Menu" Clicked="Button_Clicked"/>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

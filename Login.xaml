@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRSVPMobile.Views.Login">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Username" />
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Placeholder="Enter Username" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Password" />
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Placeholder="Enter Password" IsPassword="True" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                       <Button Text="Login" Clicked="Button_Clicked" />
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

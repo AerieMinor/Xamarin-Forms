@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRSVPMobile.Views.ViewAttendees">
+    <ContentPage.Content>      
+       
+        <StackLayout>
+            <ListView x:Name= "ae1vents" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name1}" FontSize="Micro"/>
+                                <Label Text="{Binding Mobile}" FontSize="Micro"/>
+                                <Label Text="{Binding EmailAddress}" FontSize="Micro" />
+                                                                
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Main Menu" Clicked="Button_Clicked"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

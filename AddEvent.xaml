@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRSVPMobile.Views.AddEvent">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Name" FontSize="Micro" />
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Text="{Binding Name}" Placeholder="Enter Name" FontSize="Small"/>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Address" FontSize="Micro"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Text="{Binding Address}" Placeholder="Enter Address" FontSize="Small"/>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="People" />
+                    </ViewCell>
+                    <ViewCell>
+                        <Label x:Name="lblid" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small"></Label>
+                    </ViewCell>
+                    <ViewCell>
+                        <!--Value may not be correct property for binding-->
+                        <Stepper Value="{Binding People}" Minimum="0" Maximum="10" Increment="1" ValueChanged="OnValueChanged"  />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Host Name" FontSize="Micro"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Entry Text="{Binding HostName}" Placeholder="Enter Host's Name" FontSize="Small"/>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Event Date/Time" FontSize="Micro"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <DatePicker Date="{Binding Events1}" FontSize="Small"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <TimePicker Time="{Binding Events2}" FontSize="Small" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="RSVP Deadline" FontSize="Micro"/>
+                    </ViewCell>
+                    <ViewCell>
+                       <DatePicker Date="{Binding RSVP1}" FontSize="Small" /> 
+                    </ViewCell>
+                    <ViewCell>
+                        <TimePicker Time="{Binding RSVP2}" FontSize="Small" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Submit" Clicked="Button_Clicked"/>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Cancel" Clicked="Button_Clicked_1"/>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

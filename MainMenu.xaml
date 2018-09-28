@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyRSVPMobile.Views.MainMenu">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                      <Label Text="Main Menu" Font="Arial" BackgroundColor="Blue" TextColor="AntiqueWhite" FontSize="Large"/>  
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="View All Events" Font="Arial" BackgroundColor="Blue" TextColor="AntiqueWhite" FontSize="Medium" Clicked="Button_Clicked" />
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                       <Button Text="View RSVPs" Font="Arial" BackgroundColor="Blue" TextColor="AntiqueWhite" FontSize="Medium" Clicked="Button_Clicked_1"/> 
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Add Event" Font="Arial" BackgroundColor="Blue" TextColor="AntiqueWhite" FontSize="Medium" Clicked="Button_Clicked_2"/>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Log Out" Font="Arial" BackgroundColor="Black" TextColor="AntiqueWhite" FontSize="Medium" Clicked="Button_Clicked_3"/>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
